@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexandre Lima | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio pessoal de Alexandre Lima, estudante e entusiasta de programação e desenvolvimento de jogos."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="dd0877bf08b8147b90fda488333231dd.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand">Alexandre Lima</div>
+
+        <nav class="site-nav" aria-label="Navegação principal">
+          <a href="#home">Home</a>
+        </nav>
+      </header>
+
+      <main id="home" class="hero">
+        <div class="profile-wrap reveal">
+          <img
+            class="profile-photo"
+            src="WhatsApp Image 2026-10-07 at 17.28.41.jpeg"
+            alt="Retrato de Alexandre Lima"
+          />
+        </div>
+
+        <div class="hero-copy reveal">
+          <h1>Alexandre Lima</h1>
+          <p class="subtitle">Student and coding enthusiast</p>
+
+          <div class="cta-row">
+            <button class="btn btn-primary email-btn" type="button" data-email="alrxlima92@gmail.com">Email</button>
+            <a class="btn btn-secondary" href="https://github.com/alexandrelima8cr7-coder" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </main>
+
+      <section id="about" class="bio reveal">
+        <p>
+          Hello! I'm Alexandre, a student and software developer.
+        </p>
+
+        <p>
+          I'm primarily dedicated to the game industry.
+        </p>
+
+        <p>
+          I am 16 years old, and I have a deep interest in programming, game development,
+          and creating tools that make digital experiences more engaging and interactive.
+        </p>
+      </section>
+
+      <div class="audio-controls reveal" aria-label="Controles de áudio">
+        <button id="musicToggle" class="music-toggle" type="button" aria-label="Play or pause background music">
+          ▶
+        </button>
+        <input id="volumeSlider" type="range" min="0" max="1" step="0.01" value="0.35" aria-label="Volume da música" />
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <button class="footer-name-btn" type="button" data-email="alex_lima10@outlook.pt">© 2026 Alexandre Lima</button>
+    </footer>
+
+    <div id="emailToast" class="email-toast" aria-live="polite" aria-atomic="true"></div>
+
+    <audio id="bgMusic" loop preload="auto" volume="0.35">
+      <source src="mickeyscat-moment-of-peace-mickeyscat-554494.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
